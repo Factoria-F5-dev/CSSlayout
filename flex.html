@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Pensar en un móvil
+    También vale la pena señalar que no hay floats o unidades basadas en porcentajes en React Native. Esto significa que solo podemos hacer layouts utilizando Flexbox y posicionamiento CSS.-->
+    <style>
+        section {
+            display: flex;
+
+            /* Por defecto row que es lo que mola 
+            /* Movile first primero row y luego column */
+             
+
+            /* Ver en el inspector todo lo que se aplica en el contenedor para aliniear los elementos */
+        }
+        div {
+            background-color: green; 
+            border: 1px solid white;
+            padding: 10px;
+            /*flex-grow: 1;*/  
+        }
+
+        /* Lo que se añade a los elementos */
+
+        /* order: Esta propiedad se usa para cambiar el orden de los elementos dentro del contenedor flex sin cambiar el orden en el código fuente HTML. Se pueden asignar valores enteros positivos o negativos para controlar el orden de presentación de los elementos. Los elementos se ordenan de menor a mayor valor. */
+        /*Los que no tienen por defecto es 0*/
+        /* #item4 {
+            order: 1; /* Si solo me funciona el -1 y el 1 es porque solo hay un elemento con order
+        }
+        item1 {
+            order: -1; /* Si solo me funciona el -1 y el 1 es porque solo hay un elemento con order
+        } */
+
+        /* Cómo crece en relación a los otros */
+        /* flex-grow: Esta propiedad determina cómo se deben distribuir los espacios adicionales en el contenedor flex entre los elementos flexibles. Se utiliza para especificar la proporción en la que un elemento crece con respecto a otros elementos flexibles dentro del mismo contenedor.
+        por defecto: 0
+
+        flex-shrink: Similar a flex-grow, esta propiedad controla la capacidad de un elemento para reducirse en tamaño cuando el contenedor flex se hace más pequeño que el tamaño total de los elementos.
+        por defecto: 1
+
+        flex-basis: Establece el tamaño inicial de un elemento flexible antes de que se distribuyan los espacios adicionales o se ajusten los tamaños en función del espacio disponible en el contenedor flex.
+        por defecto: auto. Afecta arriba y abajo
+        */
+
+        #item1 {
+            /*flex-basis: 50%;*/
+            flex-basis: 200px;
+            /*flex-grow: 5*/
+
+        }
+
+        /*
+        align-self: Esta propiedad anula la alineación predeterminada definida por la propiedad align-items del contenedor flex para un solo elemento. Puede alinear un elemento individual a lo largo del eje transversal del contenedor. 
+        */
+
+        /* Primero móvil */
+        /* Se aplica a un mínimo de 768 píxeles */
+        @media (max-width: 500px) {
+            div {
+                background-color: yellow; 
+            }
+        }
+        @media (min-width: 800px) {
+            div {
+                background-color: red; 
+            }
+            section {
+                /*flex-direction: row;*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="item1">Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div id="item4">Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+        <div>Div 7</div>
+        <div>Div 8</div>
+        <div>Div 9</div>
+        <div>Div 10</div>
+    </section>
+</body>
+</html>

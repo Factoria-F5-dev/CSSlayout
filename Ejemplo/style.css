@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 52px;
+    color: #0076FA;
+    /* Para que la imagen se superponga */
+    z-index: 10;
+    position: relative;
+}
+
+.green {
+    color: #00B570;
+}
+
+.red {
+    color: #FD615B;
+}
+
+img {
+    width: 350px;
+}
+
+section {
+    width: 49%;
+    max-width: 600px;
+}
+
+img, section {
+   /* Block por defecto: ocupa un bloque entero. Inline se adapta uno detrás de otro pero ocupa lo que ocupa, no puedo darle el ancho que quiero. Inline block, no ocupa todo se comporta como un inline pero puedo modificarlo*/
+   display: inline-block;
+   vertical-align: top; 
+}
+
+footer {
+    text-align: right;
+}
+
+#personaConOrdenador {
+    /* Para que la imagen se superponga */
+    z-index: 1;
+    position: relative;
+    margin-top: -90px;
+}
+
+#constancia {
+    position: relative;
+    top: -70px;
+    left: 70px;
+    padding-right: 70px;
+}
+
+#dosPersonasConOrdenador {
+    width: 500px;
+    padding-right: 100px;
+}
+
+/* Para colocar las cosas
+section {
+    position: relative;
+    top: 50px
+}
+*/
+
+/* Sale del flujo, flota 
+section, img {
+    float:right;
+}
+*/

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <style>
+      #contenedor {
+        display:grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 2fr 1fr;
+        /*Puedes crear una cuadrícula con tamaños fijos, utilizando píxeles, por ejemplo. También se puede crear una cuadrícula utilizando tamaños flexibles con porcentajes o con la nueva unidad de medida fr (fracción), diseñada para este propósito.*/
+        color: white;
+        /* Al usar grid-template-areas, puedes especificar el diseño de la cuadrícula mediante una serie de nombres de áreas, donde cada nombre representa una celda en la cuadrícula. Las áreas se pueden definir utilizando una combinación de nombres y puntos, donde los nombres representan las áreas ocupadas por los elementos y los puntos representan celdas vacías. COLOCAS LAS COSAS*/
+        grid-template-areas:
+          'header header'
+          'nav nav'
+          'aside aside'
+          'main main'
+          'footer1 footer2';
+      }
+      .item {
+        background-color: blue;
+        border: 1px solid white;
+        padding: 5px;
+      }
+      .item-1 {
+        grid-area: header;
+      }
+      .item-2 {
+        grid-area: nav;
+      }
+      .item-3 {
+        grid-area: main;
+      }
+      .item-4 {
+        grid-area: aside;
+      }
+      .item-5 {
+        grid-area: footer1;
+        background-color: grey;
+      }
+      .item-6 {
+        grid-area: footer2;
+        background-color: grey;
+      }
+
+      /* .box1 {
+        Tambien puedo colocar así cada elemento
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }*/
+
+      @media (min-width: 768px) {
+        #contenedor {
+          grid-template-areas:
+            'header nav'
+            'aside main'
+            'footer1 footer2';
+        }
+      }
+
+    </style>
+</head>
+<body>
+  <div id="contenedor">
+    <div class="item item-1">Logo</div>
+    <div class="item item-2">Nav</div>
+    <div class="item item-3">Main</div>
+    <div class="item item-4">Aside</div>
+    <div class="item item-5">Footer 1</div>
+    <div class="item item-6">Footer 2</div>
+  </div>
+</body>
+</html>
+
+

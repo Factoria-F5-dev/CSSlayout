@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <style>
+        h1 {
+            text-align:center
+        }
+        nav {
+            text-align:center
+            /* Elemento de bloque por defecto */
+        }
+        div.center {
+            /* Elemento de inline por defecto */
+            width: 300px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: green;
+        }
+        section {
+            background-color: rgb(149, 27, 27);
+            width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        div.lista {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background-color: grey;
+            /* position: fixed; Se coloca donde le digamos sí o sí */
+            /* position: relative; Posición normal pero se mueve un poco*/
+            /* position: absolute; Como fixed pero se coloca respecto a un relative si lo hay */
+            /* float: left; se sale del flujo se colocan */
+            display: inline-block
+            /* Fluye como un inline pero puede meterles info como un block;*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Viene de las revistas, componer cajas-->
+    <!-- Display: Inline y block, float. Tipo de cajas-->
+    <section id="main">
+        <header>
+            <h1>Ejemplo</h1>
+            <nav>Centrar elemento de bloque, con text align</nav>
+            <div class="center">Centrar elemento de bloque con una tamaño específico. (Inline lo que mide el contenido)</div>
+        </header>
+        <div class="lista">Div 1</div>
+        <div class="lista">Div 2</div>
+        <div class="lista">Div 3</div>
+        <div class="lista">Div 4</div>
+        <div class="lista">Div 5</div>
+        <!-- Seguir con flex y grid-->
+    </section>
+</body>
+</html>
