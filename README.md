@@ -1,6 +1,6 @@
 # CSSlayout
 
-Code en el repo
+Code en el repo de Grid, de Flex y lo básico
 
 Herramientas para construir:
 
