@@ -13,7 +13,7 @@ Juegos:
 - GRID: https://cssgridgarden.com/#es
 - FLEX: https://flexboxfroggy.com/ y http://www.flexboxdefense.com/ https://saijogeorge.com/css-puns/china-wall/ https://www.csszengarden.com/
 
-  Práctica:
+Práctica:
 
 - https://www.csszengarden.com/
 
