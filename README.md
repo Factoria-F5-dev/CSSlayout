@@ -11,7 +11,7 @@ Juegos:
 
 - CSS: https://saijogeorge.com/css-puns/china-wall/ 
 - GRID: https://cssgridgarden.com/#es
-- FLEX: https://flexboxfroggy.com/ y http://www.flexboxdefense.com/ https://saijogeorge.com/css-puns/china-wall/ https://www.csszengarden.com/
+- FLEX: https://flexboxfroggy.com/ y http://www.flexboxdefense.com/ https://saijogeorge.com/css-puns/china-wall/ https://www.csszengarden.com/ https://knightsoftheflexboxtable.com/
 
 Práctica:
 
